@@ -1,118 +1,171 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>X-Rebel Gamerz</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: &4;
-            color: #dcdcdc;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X Rebel Gamerz - Minecraft Community</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+    }
 
-        header {
-            background-color: #107c10;
-            padding: 20px;
-            text-align: center;
-        }
+    header {
+      background-color: #222;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-            color: white;
-        }
+    header h1 {
+      color: #00ff00;
+      margin-bottom: 10px;
+    }
 
-        nav {
-            background-color: #0e5b0e;
-            text-align: center;
-            padding: 10px 0;
-        }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      text-align: center;
+    }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    nav a {
+      display: inline-block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    nav a:hover {
+      background-color: #00ff00;
+      color: black;
+    }
 
-        section {
-            padding: 20px;
-        }
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-        footer {
-            background-color: #107c10;
-            text-align: center;
-            padding: 10px;
-            color: white;
-        }
+    section {
+      margin-bottom: 40px;
+    }
 
-        img {
-            max-width: 100%;
-        }
+    .card {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
 
-        .gallery img {
-            width: 200px;
-            margin: 10px;
-            border: 2px solid white;
-        }
-    </style>
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px solid #00ff00;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 10px;
+      background-color: #00ff00;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to X-Rebel Gamerz Site</h1>
-    </header>
+<header>
+  <h1>X Rebel Gamerz</h1>
+  <p>⚔️ Minecraft Survival • Mini-Games • Creative • Events ⚔️</p>
+</header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#downloads">Downloads</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+  <a href="#about">About</a>
+  <a href="#servers">Servers</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#news">News</a>
+  <a href="#stats">Player Stats</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <section id="home">
-        <h2>🏠 Home</h2>
-        <p>This website is for Minecraft fans! Here you can find info, images, and downloads related to Minecraft.</p>
-    </section>
+<main>
 
-    <section id="about">
-        <h2>🧱 About Minecraft</h2>
-        <p>Minecraft is a sandbox video game created by Mojang. Players explore a blocky world and can build anything they want!</p>
-    </section>
+  <section id="about" class="card">
+    <h2>About Us</h2>
+    <p>X Rebel Gamerz is a growing Minecraft community for creative, survival, and competitive players. We aim to create a friendly, fun environment for players of all skill levels. Join us and explore endless possibilities!</p>
+  </section>
 
-    <section id="downloads">
-        <h2>⬇️ Downloads</h2>
-        <p>Here are some fun things to download:</p>
-        <ul>
-            <li><a href="#">Minecraft Skins</a></li>
-            <li><a href="#">Texture Packs</a></li>
-            <li><a href="#">Maps</a></li>
-        </ul>
-    </section>
+  <section id="servers" class="card">
+    <h2>Our Minecraft Servers</h2>
+    <ul>
+      <li><strong>Survival Server</strong> - Classic survival experience with economy and land protection.</li>
+      <li><strong>Creative Server</strong> - Build anything with unlimited blocks and plots.</li>
+      <li><strong>Mini-Games Server</strong> - PvP, parkour, bedwars, and more!</li>
+    </ul>
+    <p><strong>Server IP:</strong> <code>play.xrebelgamerz.com</code></p>
+  </section>
 
-    <section id="gallery">
-        <h2>🖼️ Gallery</h2>
-        <div class="gallery">
-            <img src="https://via.placeholder.com/200x200?text=Minecraft+1" alt="Minecraft image 1">
-            <img src="https://via.placeholder.com/200x200?text=Minecraft+2" alt="Minecraft image 2">
-            <img src="https://via.placeholder.com/200x200?text=Minecraft+3" alt="Minecraft image 3">
-        </div>
-    </section>
+  <section id="gallery" class="card">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://i.imgur.com/O3DHIA5.png" alt="Build 1">
+      <img src="https://i.imgur.com/bUFhIfQ.png" alt="Build 2">
+      <img src="https://i.imgur.com/I6kzWRC.png" alt="Build 3">
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>📧 Contact</h2>
-        <p>Email: <a href="mailto:rebelsmp.fun">rebelsmp.fun</a></p>
-    </section>
+  <section id="news" class="card">
+    <h2>Latest News</h2>
+    <ul>
+      <li><strong>June 2025:</strong> 🎉 New SkyBlock server launched!</li>
+      <li><strong>May 2025:</strong> 🛠️ Website updated with new player stats!</li>
+      <li><strong>April 2025:</strong> 🏆 Monthly PvP tournament started!</li>
+    </ul>
+  </section>
 
-    <footer>
-        <p>Made by LORDxTHANONS &copy; 2025</p>
-    </footer>
+  <section id="stats" class="card">
+    <h2>Top Players</h2>
+    <ul>
+      <li><strong>BlockBreakerZ</strong> - 25,000 blocks mined</li>
+      <li><strong>RedstonerX</strong> - 500 hours played</li>
+      <li><strong>PvP_Champ</strong> - 120 kills</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact & Community</h2>
+    <p>💬 Join us on Discord: <a href="https://discord.gg/xrebelgamerz" target="_blank">discord.gg/xrebelgamerz</a></p>
+    <p>📧 Email: <a href="mailto:contact@xrebelgamerz.com">contact@xrebelgamerz.com</a></p>
+    <div class="buttons">
+      <a href="#">Join Now</a>
+      <a href="#">Donate</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 X Rebel Gamerz • Not affiliated with Mojang or Microsoft.</p>
+</footer>
 
 </body>
 </html>
